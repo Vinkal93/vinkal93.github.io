@@ -3,173 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .team-member {
-            transition: transform 0.3s ease-in-out;
-        }
-        .team-member:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Your Company Name - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="min-h-screen bg-gray-100">
-    <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-gray-900">About Us</h1>
-        </div>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Your Company Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <div class="px-4 py-6 sm:px-0">
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg fade-in">
-                    <div class="px-4 py-5 sm:px-6">
-                        <h2 class="text-2xl font-semibold text-gray-900">Our Story</h2>
-                    </div>
-                    <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
-                        <dl class="sm:divide-y sm:divide-gray-200">
-                            <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt class="text-sm font-medium text-gray-500">Our Mission</dt>
-                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    Our mission is to [your mission description]. We are committed to [your goals].
-                                </dd>
-                            </div>
-                            <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt class="text-sm font-medium text-gray-500">Our Vision</dt>
-                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    Our vision is to [your vision description]. We aspire to [your long-term aspiration].
-                                </dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
+        <section class="hero">
+            <h1>Welcome to Your Company</h1>
+            <p>We create amazing digital experiences</p>
+            <a href="contact.html" class="cta-button">Get Started</a>
+        </section>
 
-                <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg fade-in">
-                    <div class="px-4 py-5 sm:px-6">
-                        <h2 class="text-2xl font-semibold text-gray-900">Our Team</h2>
-                    </div>
-                    <div class="border-t border-gray-200">
-                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 px-4 py-5 sm:p-6">
-                            <div class="team-member relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                <div class="flex-shrink-0">
-                                    <img class="h-10 w-10 rounded-full" src="https://via.placeholder.com/40" alt="">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <a href="#" class="focus:outline-none">
-                                        <span class="absolute inset-0" aria-hidden="true"></span>
-                                        <p class="text-sm font-medium text-gray-900">Team Member 1</p>
-                                        <p class="text-sm text-gray-500 truncate">Position 1</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-member relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                <div class="flex-shrink-0">
-                                    <img class="h-10 w-10 rounded-full" src="https://via.placeholder.com/40" alt="">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <a href="#" class="focus:outline-none">
-                                        <span class="absolute inset-0" aria-hidden="true"></span>
-                                        <p class="text-sm font-medium text-gray-900">Team Member 2</p>
-                                        <p class="text-sm text-gray-500 truncate">Position 2</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-member relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                <div class="flex-shrink-0">
-                                    <img class="h-10 w-10 rounded-full" src="https://via.placeholder.com/40" alt="">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <a href="#" class="focus:outline-none">
-                                        <span class="absolute inset-0" aria-hidden="true"></span>
-                                        <p class="text-sm font-medium text-gray-900">Team Member 3</p>
-                                        <p class="text-sm text-gray-500 truncate">Position 3</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="features">
+            <div class="feature">
+                <h2>Innovative Design</h2>
+                <p>We create stunning, modern designs that captivate your audience.</p>
+            </div>
+            <div class="feature">
+                <h2>Responsive Development</h2>
+                <p>Our websites work flawlessly on all devices and screen sizes.</p>
+            </div>
+            <div class="feature">
+                <h2>SEO Optimization</h2>
+                <p>We ensure your website ranks high in search engine results.</p>
+            </div>
+        </section>
 
-                <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg fade-in">
-                    <div class="px-4 py-5 sm:px-6">
-                        <h2 class="text-2xl font-semibold text-gray-900">Frequently Asked Questions</h2>
-                    </div>
-                    <div class="border-t border-gray-200">
-                        <div class="border-b border-gray-200">
-                            <button class="w-full px-4 py-6 text-left focus:outline-none" onclick="toggleFaq(0)">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-lg font-medium text-gray-900">When was our company founded?</span>
-                                    <svg class="h-5 w-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                                <p class="mt-2 text-gray-600 hidden">Our company was founded in 2010, and since then we've been on a path of continuous growth and innovation.</p>
-                            </button>
-                        </div>
-                        <div class="border-b border-gray-200">
-                            <button class="w-full px-4 py-6 text-left focus:outline-none" onclick="toggleFaq(1)">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-lg font-medium text-gray-900">What are our core values?</span>
-                                    <svg class="h-5 w-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                                <p class="mt-2 text-gray-600 hidden">Our core values are: customer satisfaction, innovation, teamwork, and social responsibility.</p>
-                            </button>
-                        </div>
-                        <div class="border-b border-gray-200">
-                            <button class="w-full px-4 py-6 text-left focus:outline-none" onclick="toggleFaq(2)">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-lg font-medium text-gray-900">What types of products/services do we offer?</span>
-                                    <svg class="h-5 w-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                                <p class="mt-2 text-gray-600 hidden">We offer high-quality [product/service name] that provide [benefit/feature].</p>
-                            </button>
-                        </div>
-                    </div>
+        <section class="cta">
+            <h2>Ready to start your project?</h2>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a creative agency dedicated to delivering exceptional digital solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@yourcompany.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <script>
-        function toggleFaq(index) {
-            const faqButtons = document.querySelectorAll('.border-b button');
-            const faqAnswer = faqButtons[index].querySelector('p');
-            const faqIcon = faqButtons[index].querySelector('svg');
-            
-            faqAnswer.classList.toggle('hidden');
-            faqIcon.classList.toggle('rotate-180');
-        }
-
-        function fadeInElements() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            fadeElements.forEach(element => {
-                observer.observe(element);
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', fadeInElements);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
