@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1.5rem;
+    min-width: 300px;
+}
+
+.footer-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.about .contact span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.about .socials a {
+    color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+}
+
+.about .socials a:hover {
+    color: white;
+    border-color: white;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.links ul li a {
+    color: #d3d3d3;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.links ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.contact-form .contact-input {
+    background: #272727;
+    color: #bebebe;
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+}
+
+.contact-form .contact-input:focus {
+    outline: none;
+}
+
+.contact-form textarea.contact-input {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form .btn {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #0056b3;
+}
+
+.footer-bottom {
+    background: #343a40;
+    color: #686868;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+
+    .footer-section:last-child {
+        margin-bottom: 0;
+    }
+}
